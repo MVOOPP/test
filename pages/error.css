@@ -1,0 +1,856 @@
+@font-face {
+    font-family: Montserrat-ExtraBold;
+    src: url("../fonts/Montserrat/Montserrat-ExtraBold.ttf");
+}
+@font-face {
+    font-family: Evolventa-Regular;
+    src: url("../fonts/ttf/Evolventa-Regular.ttf");
+}
+@font-face {
+    font-family: Evolventa-Bold;
+    src: url("../fonts/ttf/Evolventa-Bold.ttf");
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    background-color: #0D0D0D;
+}
+header {
+    margin-top: 30px;
+}
+
+.sales {
+    position: absolute;
+    display: flex;
+    gap: 5px;
+    top: 221px;
+}
+/* Графики на задний фон */
+.rectangle {
+    width: 30.22px;
+    height: 134.53px;
+    border-radius: 2.07px;
+    background-color: #1B1B1B;
+}
+.rectangle2 {
+    margin-top: 30px;
+    width: 30.22px;
+    height: 134.53px;
+    border-radius: 2.07px;
+    background-color: #1B1B1B;
+}
+.rectangle3 {
+    margin-top: 129px;
+    width: 30.22px;
+    height: 67.78px;
+    border-radius: 2.07px;
+    background-color: #1B1B1B;
+}
+
+
+.sales_back {
+    position: absolute;
+    display: flex;
+    gap: 4px;
+    right: 0;
+}
+.rectangle_back1 {
+    margin-top: 288px;
+    width: 27px;
+    height: 56px;
+    border-radius: 2px;
+    background-color: #1B1B1B;
+}
+.rectangle_back2 {
+    margin-top: 225px;
+    width: 27px;
+    height: 97px;
+    border-radius: 2px;
+    background-color: #1B1B1B;
+}
+.rectangle_back3 {
+    margin-top: 194px;
+    width: 27px;
+    height: 62px;
+    border-radius: 2px;
+    background-color: #1B1B1B;
+}
+.rectangle_back4 {
+    margin-top: 242px;
+    width: 27px;
+    height: 30px;
+    border-radius: 2px;
+    background-color: #1B1B1B;
+}
+.rectangle_back5 {
+    margin-top: 260px;
+    width: 27px;
+    height: 33px;
+    border-radius: 2px;
+    background-color: #1B1B1B;
+}
+.rectangle_back6 {
+    margin-top: 87px;
+    width: 27px;
+    height: 186px;
+    border-radius: 2px;
+    background-color: #1B1B1B;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+}
+body {
+    min-height: 100vh; /* Страница всегда имеет необходимый размер */
+    position: relative; /* Определяет позиционирование элементов внутри */
+}
+.wrapper {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+
+/* Навигация */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+.logo_txt {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.logo_txt p {
+    line-height: 15px;
+    font-family: Montserrat-ExtraBold;
+    width: max-content;
+    text-align: center;
+    color: #fff;
+    font-size: 19.81px;
+}
+.logo_txt span {
+    font-size: 15.85px;
+}
+.ul_nav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.li_nav1 {
+    list-style: none;
+    padding: 4px 27px;
+    border: 1px solid transparent; 
+    border-radius: 5px;
+    border: 1px solid #fff;
+
+}
+.li_nav {
+    list-style: none;
+    padding: 4px 27px;
+    border: 1px solid transparent; 
+    border-radius: 5px;
+}
+.li_nav:hover {
+    border: 1px solid #fff;
+    transition:  0.7s ease;
+}
+.li_nav1 a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Evolventa-Regular;
+    font-size: 18px;
+    opacity: 80%;
+}
+
+.li_nav a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Evolventa-Regular;
+    font-size: 18px;
+    opacity: 80%;
+}
+.li_nav a:hover {
+    opacity: 100%;
+}
+
+/* Кнопка личный кабинет */
+.dropbtn {
+    font-family: Evolventa-Bold;
+    background: linear-gradient(230deg, rgba(255,219,94,1) 0%, rgba(255,153,0,1) 100%);
+    text-decoration: none;
+    color: #000;
+    padding: 13px;
+    border-radius: 44px;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+}
+.dropbtn:hover {
+    box-shadow: 0px 0px 15px 0px rgba(255,219,94,1);
+}
+.dropbtn.active {
+    background-color: #D1D1D1;
+    border-radius: 24px 24px 0px 0px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #D1D1D1;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+    z-index: 1;
+    border-radius: 0px 0px 24px 24px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 11px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Evolventa-Bold;
+    opacity: 50%;
+}
+
+.dropdown-content a:hover {
+    background-color: #D1D1D1;
+    opacity: 100%;
+    border-radius: 0px 0px 24px 24px;
+}
+.line {
+    width: 70%;
+    background-color: black;
+    opacity: 50%;
+    height: 1px;
+    margin: 0 auto;
+}
+.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Бургер меню */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+/* Крестик для закрытия меню */
+.close-icon {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Оверлей для затемнения и блюра */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+}
+/* Кнопка личный кабинет */
+.dropbtn {
+    font-family: Evolventa-Bold;
+    background: linear-gradient(230deg, rgba(255,219,94,1) 0%, rgba(255,153,0,1) 100%);
+    text-decoration: none;
+    color: #000;
+    padding: 13px;
+    border-radius: 44px;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+}
+.dropbtn:hover {
+    box-shadow: 0px 0px 15px 0px rgba(255,219,94,1);
+}
+.dropbtn.active {
+    background: #D1D1D1;
+    border-radius: 24px 24px 0px 0px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #D1D1D1;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+    z-index: 1;
+    border-radius: 0px 0px 24px 24px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 11px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Evolventa-Bold;
+    opacity: 50%;
+}
+
+.dropdown-content a:hover {
+    background-color: #D1D1D1;
+    opacity: 100%;
+    border-radius: 0px 0px 24px 24px;
+}
+.line {
+    width: 70%;
+    background-color: black;
+    opacity: 50%;
+    height: 1px;
+    margin: 0 auto;
+}
+.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* main */
+.hello {
+    width: 60%;
+    margin-top: 78px;
+}
+.hello h1 {
+    font-size: 60px;
+    font-family: Evolventa-Bold;
+    color: #fff;
+}
+.hello p {
+    margin-top: 25px;
+    font-size: 40px;
+    font-family: Evolventa-Regular;
+    color: #fff;
+    width: 81%;
+}
+
+
+/* кнопка регистрации(поп ап) */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 20%;
+    border-radius: 20px;
+}
+.popup h2 { 
+    font-family: Evolventa-Bold;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(230deg, rgba(255, 219, 94, 1) 0%, rgba(255, 153, 0, 1) 100%);
+    border-radius: 20px 20px 0px 0px;
+}
+.popup .close {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 42px;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px); /* Добавляем блюр эффект */
+    z-index: 999;
+}
+
+
+form {
+    padding: 20px;
+    font-family: Evolventa-Regular;
+    background-color: #1C1C1C;
+    border-radius: 0px 0px 18px 18px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+form img {
+    margin: 0 auto;
+}
+form p {
+    margin-top: 55px;
+    font-family: Evolventa-Regular;
+    font-size: 20px;
+    color: #fff;
+}
+label {
+    display: flex;
+    align-items: center;
+}
+.suggest {
+    color: #FFFFFF;
+    opacity: 40%;
+    font-size: 9px;
+}
+label a {
+    color: #005AFF;
+    text-decoration: underline;
+    opacity: 40%;
+}
+/* Кнопка регистрации */
+.reg {
+    display: block;
+    width: 42%;
+    height: 42%;
+    margin-top: 61px;
+    font-family: Evolventa-Bold;
+    background: linear-gradient(230deg, rgba(255, 219, 94, 1) 0%, rgba(255, 153, 0, 1) 100%);
+    text-decoration: none;
+    color: #000;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 25px;
+    padding: 20px;
+}
+.reg:hover {
+    box-shadow: 0px 0px 15px 0px rgba(255,219,94,1);
+}
+.reg_suc {
+    display: block;
+    width: 100%;
+    height: 42%;
+    margin-top: 61px;
+    font-family: Evolventa-Bold;
+    background: linear-gradient(230deg, rgba(255, 219, 94, 1) 0%, rgba(255, 153, 0, 1) 100%);
+    text-decoration: none;
+    color: #000;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 25px;
+    padding: 20px;
+}
+/* кнопка регистрации(поп ап) */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 20%;
+    border-radius: 20px;
+}
+.popup h2 { 
+    font-family: Evolventa-Bold;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(230deg, rgba(255, 219, 94, 1) 0%, rgba(255, 153, 0, 1) 100%);
+    border-radius: 20px 20px 0px 0px;
+}
+.popup .close {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 42px;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px); /* Добавляем блюр эффект */
+
+    z-index: 999;
+}
+
+
+/* ПОдвал */
+.back_footer {
+    background-color: #000000;
+}
+.container_footer {
+    margin-top: 120px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.container_logo_text {
+    display: flex;
+    gap: 55px;
+}
+.logo {
+    display: flex;
+    gap: 28px;
+}
+.logo p {
+    color: #F4F4F4;
+    font-family: Evolventa-Regular;
+    opacity: 50%;
+    width: 270px;
+}
+.mess p {
+    color: #F4F4F4;
+    font-family: Evolventa-Regular;
+    font-size: 20px;
+}
+.mess a {
+    color: #F4F4F4;
+    font-family: Evolventa-Regular;
+    font-style: 16px;
+    opacity: 50%;
+    text-decoration: none;
+}
+.mess2 {
+    margin-top: 5px;
+    display: flex;
+    gap: 33px;
+}
+.icons {
+    display: flex;
+    gap: 28px;
+}
+.icon {
+    display: flex;
+    border-radius: 50%;
+    background: linear-gradient(230deg, rgba(255, 219, 94, 1) 0%, rgba(255, 153, 0, 1) 100%);
+    width: 31px;
+    height: 31px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.icon2 {
+    padding-top: 5px;
+    padding-right: 3px;
+    display: flex;
+    border-radius: 50%;
+    background: linear-gradient(230deg, rgba(255, 219, 94, 1) 0%, rgba(255, 153, 0, 1) 100%);
+    width: 31px;
+    height: 31px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.container_footer_text_logo {
+    display: flex;
+    gap: 55px;
+}
+
+@media (max-width: 1440px) {
+    .wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .sales {
+        display: none;
+    }
+    .sales_back {
+        display: none;
+    }
+    .sales_back_phone {
+        display: none;
+    }
+    .sales_back_phone2 {
+        display: none;
+    }
+    .manual {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 200px;
+        text-align: center;
+    }
+    .manual h1, .how_it_works {
+        width: 100%;
+    }
+    .container_advantages {
+        flex-direction: column;
+    }
+    .advantage {
+        text-align: left;
+    }
+    .slider {
+        width: 100%;
+    }
+    .accordion_li label {
+        padding: 1rem;
+    }
+    .accordion .content {
+        padding: 0rem 1rem;
+    }
+    .sales_back_phone2 {
+        display: none;
+    }
+    .sales_back_phone3  {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    
+    .ul_nav {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: #0D0D0D;
+        width: 100%;
+        height: max-content;
+        z-index: 1001;
+        transition: right 0.3s ease-in-out;
+        align-items: flex-end;
+        padding: 20px;
+        border: none;
+        border-radius: 0px 0px 20px 20px;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .li_nav {
+        width: 100%; /* Устанавливаем ширину элементов меню */
+        text-align: right; /* Выравниваем текст по правому краю */
+    }
+    .dropdown-desktop {
+        display: none;
+    }
+    .dropdown-mobile {
+        display: block;
+    }
+    nav {
+        align-items: center;
+        gap: 20px;
+    }
+    .li_accordion {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .text_salary h1 {
+        font-size: 30px;
+    }
+    .accsses {
+        font-size: 16px;
+        text-align: center;
+        margin: 25px auto;
+    }
+    .reg {
+        margin: 50px auto;
+        font-size: 16px;
+    }
+    .manual h1 {
+        font-size: 25px;
+    }
+    .treid {
+        font-size: 14px;
+    }
+    .number h1 {
+        font-size: 25px;
+    }
+    .number p {
+        font-size: 14px;
+    }
+    .advantages h1 {
+        font-size: 30px;
+    }
+    .advantage h2 {
+        font-size: 16px;
+    }
+    .advantage p {
+        font-size: 10px;
+    }
+    .otzivi h1 {
+        font-size: 30px;
+    }
+    .title_accordion h1 {
+        font-size: 30px;
+    }
+    .accordion_li label {
+        font-size: 18px;
+    }
+    .accordion .content {
+        font-size: 12px;
+    }
+    .icons {
+        margin: 30px auto;
+    }
+    .container_footer {
+        display: block;
+    }
+    .container_footer_text_logo {
+        display: block;
+    }
+    .mess {
+        margin-top: 35px;
+        display: flex;
+        flex-direction: column;
+    }
+    .mess2 {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .icons {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;  
+    }
+
+    .line2 {
+        width: 100%;
+    }
+    .popup {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .ul_nav {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: #0D0D0D;
+        width: 100%;
+        height: max-content;
+        z-index: 1001;
+        transition: right 0.3s ease-in-out;
+        align-items: flex-end;
+        padding: 20px;
+        border: none;
+        border-radius: 0px 0px 20px 20px;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .li_nav {
+        width: 100%; /* Устанавливаем ширину элементов меню */
+        text-align: right; /* Выравниваем текст по правому краю */
+    }
+    .dropdown-desktop {
+        display: none;
+    }
+    .dropdown-mobile {
+        display: block;
+    }
+    nav {
+        align-items: center;
+        gap: 20px;
+    }
+    .reg {
+        margin: 50px auto;
+        font-size: 16px;
+    }
+    .icons {
+        margin: 30px auto;
+    }
+    .container_footer {
+        display: block;
+    }
+    .container_footer_text_logo {
+        display: block;
+    }
+    .mess {
+        margin-top: 35px;
+        display: flex;
+        flex-direction: column;
+    }
+    .mess2 {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .icons {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;  
+    }
+    .image2 {
+        width: 100%;
+        height: 100%;
+    }
+    .phone {
+        display: flex;
+        justify-content: center;
+    }
+    .line2 {
+        width: 100%;
+    }
+    .popup {
+        width: 100%;
+    }
+    .text_salary h1 {
+        margin-top: 40px;
+        width: 100%;
+        text-align: center;
+    }
+    .close-icon {
+        display: block;
+    }
+    .hello h1 {
+        font-size: 30px;
+    }
+    .hello p {
+        margin-top: 25px;
+        font-size: 20px;
+        font-family: Evolventa-Regular;
+        color: #fff;
+        width: 100%;
+    }
+    .reg {
+        width: 100%;
+    }
+    footer {
+        height: 52%;
+    }
+}
+@media (min-width: 769px) {
+    .dropdown-mobile {
+        display: none;
+    }
+}

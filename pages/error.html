@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Трейдер посмотри</title>
+    <link rel="stylesheet" href="successful.css">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="sales">
+            <div class="rectangle3"></div>
+            <div class="rectangle2"></div>
+            <div class="rectangle"></div>
+        </div>
+        <div class="sales_back">
+            <div class="rectangle_back1"></div>
+            <div class="rectangle_back2"></div>
+            <div class="rectangle_back3"></div>
+            <div class="rectangle_back4"></div>
+            <div class="rectangle_back5"></div>
+            <div class="rectangle_back6"></div>
+        </div>
+        <div class="wrapper">
+            <nav>
+                <a class="logo_txt" href="/index.html">
+                    <img src="/img/logo.svg" alt="">
+                    <p>ТРЕЙДЕР  <br><span>ПОСМОТРИ</span></p>
+                </a>
+                <ul class="ul_nav" id="ul_nav">
+                    <div class="close-icon" onclick="toggleMenu()">×</div>
+                    <li class="li_nav"><a href="/index.html"><p>Главная</p></a></li>
+                    <li class="li_nav"><a href="ivents.html"><p>Розыгрыши</p></a></li>
+                    <li class="li_nav"><a href="#"><p>FAQ</p></a></li>
+                    <li class="li_nav"><a href="#"><p>Помощь</p></a></li>
+                    <li class="li_nav dropdown-mobile">
+                        <a href="#"><p>Мой профиль</p></a>
+                    </li>
+                    <li class="li_nav dropdown-mobile">
+                        <a href="#"><p>Скачать ПО</p></a>
+                    </li>
+                    <li class="li_nav dropdown-mobile">
+                        <a href="keys.html"><p>Ключи</p></a>
+                    </li>
+                </ul>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="dropdown dropdown-desktop">
+                    <button id="profile-button" onclick="myFunction()" class="dropbtn">Личный кабинет</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Мой профиль</a>
+                        <div class="line"></div>
+                        <a href="#">Скачать ПО</a>
+                        <div class="line"></div>
+                        <a href="keys.html">Ключи</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+    </header>
+    <main>
+        <div class="wrapper">
+           
+            <button class="reg">Зарегистрироваться</button>
+            <div class="overlay" id="overlay"></div>
+            <div class="popup" id="popup">
+                <span class="close" id="closePopup"></span>
+                <h2>Регистрация</h2>
+                <form>
+                    <img src="/img/error.svg" alt="">
+                    <p>Трейдера с таким ID не существует.</p>
+                    <button type="submit" class="reg_suc">Вернуться</button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <div class="back_footer">
+            <div class="wrapper">
+                <div class="container_footer">
+                    <div class="container_footer_text_logo">
+                        <div class="logo">
+                            <img src="/img/logo.svg" alt="">
+                            <p>Торговля бинарными опционами, позволяет получать прибыль, прогнозируя движение цены.</p>
+                        </div>
+                        <div class="mess">
+                            <p>Соц. сети</p>
+                            <div class="mess2">
+                                <a href="#">YouTube</a>
+                                <a href="#">Телеграм канал</a>
+                                <a href="#">PRO OPTION PLUS </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icons">
+                        <div class="icon">
+                            <a href="#"><img src="/img/youtube.svg" alt=""></a>
+                        </div>
+                        <div class="icon2">
+                            <a href="#"><img src="/img/tg.svg" alt=""></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><img src="/img/robot.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

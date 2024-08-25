@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Трейдер посмотри</title>
+    <link rel="stylesheet" href="ivents.css">
+    <script src="/script.js" defer></script>
+    <script src="/animation.js"></script>
+</head>
+<body>
+    <header>
+        <div class="sales fade-in">
+            <div class="rectangle3"></div>
+            <div class="rectangle2"></div>
+            <div class="rectangle"></div>
+        </div>
+        <div class="sales_back fade-in">
+            <div class="rectangle_back1"></div>
+            <div class="rectangle_back2"></div>
+            <div class="rectangle_back3"></div>
+            <div class="rectangle_back4"></div>
+            <div class="rectangle_back5"></div>
+            <div class="rectangle_back6"></div>
+        </div>
+        <div class="wrapper fade-in">
+            <nav>
+                <a class="logo_txt" href="/index.html">
+                    <img src="/img/logo.svg" alt="">
+                    <p>ТРЕЙДЕР  <br><span>ПОСМОТРИ</span></p>
+                </a>
+                <ul class="ul_nav" id="ul_nav">
+                    <div class="close-icon" onclick="toggleMenu()">×</div>
+                    <li class="li_nav"><a href="/index.html"><p>Главная</p></a></li>
+                    <li class="li_nav1"><a href="pages/ivents.html"><p>Розыгрыши</p></a></li>
+                    <li class="li_nav"><a href="#"><p>FAQ</p></a></li>
+                    <li class="li_nav"><a href="#"><p>Помощь</p></a></li>
+                    <li class="li_nav dropdown-mobile">
+                        <a href="profile.html"><p>Мой профиль</p></a>
+                    </li>
+                    <li class="li_nav dropdown-mobile">
+                        <a href="/pages/step_one.html"><p>Скачать ПО</p></a>
+                    </li>
+                    <li class="li_nav dropdown-mobile">
+                        <a href="keys.html"><p>Ключи</p></a>
+                    </li>
+                </ul>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="dropdown dropdown-desktop">
+                    <button id="profile-button" onclick="myFunction()" class="dropbtn">Личный кабинет</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="profile.html">Мой профиль</a>
+                        <div class="line"></div>
+                        <a href="/pages/step_one.html">Скачать ПО</a>
+                        <div class="line"></div>
+                        <a href="keys.html">Ключи</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+    </header>
+    <main>
+        <div class="sales2 fade-in">
+            <div class="rectangle3"></div>
+            <div class="rectangle"></div>
+            <div class="rectangle2"></div>
+
+        </div>
+        <div class="sales_back2 fade-in">
+            <div class="rectangle_back1"></div>
+            <div class="rectangle_back2"></div>
+            <div class="rectangle_back3"></div>
+            <div class="rectangle_back4"></div>
+            <div class="rectangle_back5"></div>
+            <div class="rectangle_back6"></div>
+        </div>
+        <div class="sales_back3">
+            <div class="rectangle_back6"></div>
+            <div class="rectangle_back2"></div>
+            <div class="rectangle_back3"></div>
+            <div class="rectangle_back4"></div>
+            <div class="rectangle_back5"></div>
+            <div class="rectangle_back1"></div>
+        </div>
+        <div class="wrapper">
+            <div class="hello fade-in">
+                <h1>Добро пожаловать в раздел с розыгрышами!&#41;</h1>
+                <p>Здесь ты можешь поучавствовать в любом актуальном розыгрыше нажав всего одну кнопку, и выполнив пару условий!</p>
+                <div class="line_hello"></div>
+            </div>
+
+            <div class="items fade-in">
+
+                <div class="item fade-in">
+                    <div class="col1">
+                        <img src="/img/iphone.png" alt="">
+                    </div>
+                    <div class="col2">
+                        <p class="iphone15">Разыгрываем Iphone 15 в максимальной комлектации! <br>
+                            Цвет : титан <br>
+                            Объем памяти : 256GB
+                        </p>
+                        <p class="itogi">Итоги : 15.15.1515</p>
+
+                        <button class="reg">Зарегистрироваться</button>
+                        <div class="overlay" id="overlay"></div>
+                        <div class="popup" id="popup">
+                            <span class="close" id="closePopup">&times;</span>
+                            <h2>Регистрация</h2>
+                            <form>
+                                <p class="PO">Чтобы у вас был доступ к ПО <br>создайте аккаунт в личном кабинете</p>
+                                <div class="margin_input">
+                                    <input type="text" id="name" name="name" placeholder="Ваше Имя">
+                                </div>
+                                <div class="margin_input">
+                                    <input type="text" id="surname" name="surname" placeholder="Ваша Фамилия">
+                                </div>
+                                <div class="margin_input">
+                                    <input type="email" id="email" name="email" placeholder="Ваш e-mail">
+                                </div>
+                                <div class="margin_input">
+                                    <input type="text" id="telegram" name="telegram" placeholder="Ваш Telegram">
+                                </div>
+                                <div class="margin_input">
+                                    <label>
+                                        <input type="checkbox" id="agree" name="agree" required>
+                                        <p class="suggest">Вы подтверждаете согласие на обработку персональных данных в соответствии с условиями <a href="#">Политики обработки данных</a> и <a href="#">Договора об оказании услуг</a></p>
+                                    </label>
+                                </div>
+                                <button type="submit" class="reg2">Зарегистрироваться</button>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="line3"></div>
+
+                <div class="item">
+                    <div class="col1">
+                        <img src="/img/airpods.png" alt="">
+                    </div>
+                    <div class="col2">
+                        <p class="iphone15">Разыгрываем большие наушники Apple Airpods <br>
+                            в максимальной комлектации!  <br>
+                            Цвет : Черный 
+                        </p>
+                        <p class="itogi">Итоги : 15.15.1515</p>
+                        <button class="reg3">Розыгрыш окончен</button>
+
+                        <div class="overlay" id="overlay"></div>
+                        <div class="popup" id="popup">
+                            <span class="close" id="closePopup">&times;</span>
+                            <h2>Регистрация</h2>
+                            <form>
+                                <p class="PO">Чтобы у вас был доступ к ПО <br>создайте аккаунт в личном кабинете</p>
+                                <div class="margin_input">
+                                    <input type="text" id="name" name="name" placeholder="Ваше Имя">
+                                </div>
+                                <div class="margin_input">
+                                    <input type="text" id="surname" name="surname" placeholder="Ваша Фамилия">
+                                </div>
+                                <div class="margin_input">
+                                    <input type="email" id="email" name="email" placeholder="Ваш e-mail">
+                                </div>
+                                <div class="margin_input">
+                                    <input type="text" id="telegram" name="telegram" placeholder="Ваш Telegram">
+                                </div>
+                                <div class="margin_input">
+                                    <label>
+                                        <input type="checkbox" id="agree" name="agree" required>
+                                        <p class="suggest">Вы подтверждаете согласие на обработку персональных данных в соответствии с условиями <a href="#">Политики обработки данных</a> и <a href="#">Договора об оказании услуг</a></p>
+                                    </label>
+                                </div>
+                                <button type="submit" class="reg2">Зарегистрироваться</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="line3"></div>
+
+                <div class="item">
+                    <div class="col1">
+                        <img src="/img/airpods.png" alt="">
+                    </div>
+                    <div class="col2">
+                        <p class="iphone15">Разыгрываем большие наушники Apple Airpods <br>
+                            в максимальной комлектации!  <br>
+                            Цвет : Черный 
+                        </p>
+                        <p class="itogi">Итоги : 15.15.1515</p>
+                        <button class="reg3">Розыгрыш окончен</button>
+
+                        <div class="overlay" id="overlay"></div>
+                        <div class="popup" id="popup">
+                            <span class="close" id="closePopup">&times;</span>
+                            <h2>Регистрация</h2>
+                            <form>
+                                <p class="PO">Чтобы у вас был доступ к ПО <br>создайте аккаунт в личном кабинете</p>
+                                <div class="margin_input">
+                                    <input type="text" id="name" name="name" placeholder="Ваше Имя">
+                                </div>
+                                <div class="margin_input">
+                                    <input type="text" id="surname" name="surname" placeholder="Ваша Фамилия">
+                                </div>
+                                <div class="margin_input">
+                                    <input type="email" id="email" name="email" placeholder="Ваш e-mail">
+                                </div>
+                                <div class="margin_input">
+                                    <input type="text" id="telegram" name="telegram" placeholder="Ваш Telegram">
+                                </div>
+                                <div class="margin_input">
+                                    <label>
+                                        <input type="checkbox" id="agree" name="agree" required>
+                                        <p class="suggest">Вы подтверждаете согласие на обработку персональных данных в соответствии с условиями <a href="#">Политики обработки данных</a> и <a href="#">Договора об оказании услуг</a></p>
+                                    </label>
+                                </div>
+                                <button type="submit" class="reg2">Зарегистрироваться</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="line3"></div>
+
+                <div class="item">
+                    <div class="col1">
+                        <img src="/img/airpods.png" alt="">
+                    </div>
+                    <div class="col2">
+                        <p class="iphone15">Разыгрываем большие наушники Apple Airpods <br>
+                            в максимальной комлектации!  <br>
+                            Цвет : Черный 
+                        </p>
+                        <p class="itogi">Итоги : 15.15.1515</p>
+                        <button class="reg3">Розыгрыш окончен</button>
+
+                        <div class="overlay" id="overlay"></div>
+                        <div class="popup" id="popup">
+                            <span class="close" id="closePopup">&times;</span>
+                            <h2>Регистрация</h2>
+                            <form>
+                                <p class="PO">Чтобы у вас был доступ к ПО <br>создайте аккаунт в личном кабинете</p>
+                                <div class="margin_input">
+                                    <input type="text" id="name" name="name" placeholder="Ваше Имя">
+                                </div>
+                                <div class="margin_input">
+                                    <input type="text" id="surname" name="surname" placeholder="Ваша Фамилия">
+                                </div>
+                                <div class="margin_input">
+                                    <input type="email" id="email" name="email" placeholder="Ваш e-mail">
+                                </div>
+                                <div class="margin_input">
+                                    <input type="text" id="telegram" name="telegram" placeholder="Ваш Telegram">
+                                </div>
+                                <div class="margin_input">
+                                    <label>
+                                        <input type="checkbox" id="agree" name="agree" required>
+                                        <p class="suggest">Вы подтверждаете согласие на обработку персональных данных в соответствии с условиями <a href="#">Политики обработки данных</a> и <a href="#">Договора об оказании услуг</a></p>
+                                    </label>
+                                </div>
+                                <button type="submit" class="reg2">Зарегистрироваться</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="line3"></div>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="back_footer">
+            <div class="wrapper">
+                <div class="container_footer">
+                    <div class="container_footer_text_logo">
+                        <div class="logo">
+                            <img src="/img/logo.svg" alt="">
+                            <p>Торговля бинарными опционами, позволяет получать прибыль, прогнозируя движение цены.</p>
+                        </div>
+                        <div class="mess">
+                            <p>Соц. сети</p>
+                            <div class="mess2">
+                                <a href="#">YouTube</a>
+                                <a href="#">Телеграм канал</a>
+                                <a href="#">PRO OPTION PLUS </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icons">
+                        <div class="icon">
+                            <a href="#"><img src="/img/youtube.svg" alt=""></a>
+                        </div>
+                        <div class="icon2">
+                            <a href="#"><img src="/img/tg.svg" alt=""></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><img src="/img/robot.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
